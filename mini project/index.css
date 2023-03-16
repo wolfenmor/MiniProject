@@ -1,13 +1,13 @@
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .card {
     background: aqua;
-    width: 200px;
-    height: 150px;
+    width: 40%;
+    height: 250px;
     border: 2px solid;
     margin-bottom: 10px;
     display: flex;

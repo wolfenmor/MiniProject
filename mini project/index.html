@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <script>
@@ -11,9 +11,9 @@
     fetch("https://jsonplaceholder.typicode.com/users")
         .then(value => value.json())
         .then(users => {
+            let container = document.createElement(`div`);
+            container.className = "wrapper"
             for (const user of users) {
-                let container = document.createElement(`div`);
-                container.className = "wrapper"
                 let div = document.createElement(`div`);
                 div.innerText = `${user.id} ${user.name}`
                 div.className = "card"
